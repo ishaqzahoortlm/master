@@ -1,0 +1,31 @@
+<modification>
+
+    <file name="system/library/url.php">
+        <operation>
+            <search position="before"><![CDATA[$url .= 'index.php?route=' . $route;]]></search>
+            <add><![CDATA[
+                if ('common/home' == $route) {
+                    if ($args) {
+                        $url .= '?' . str_replace('&', '&amp;', '&' . ltrim($args, '&'));
+                    }
+                } else {
+            ]]></add>
+        </operation>
+        <operation>
+            <search position="before"><![CDATA[foreach ($this->rewrite as $rewrite) {]]></search>
+            <add><![CDATA[
+                }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file name="catalog/controller/common/seo_url.php">
+        <operation>
+            <search position="replace"><![CDATA[parse_str($url_info['query'], $data);]]></search>
+            <add><![CDATA[
+                if (isset($url_info['query'])) parse_str($url_info['query'], $data);
+            ]]></add>
+        </operation>
+    </file>
+
+</modification>

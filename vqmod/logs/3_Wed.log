@@ -1,0 +1,180 @@
+---------- Date: 2015-06-17 06:02:18 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/admin/index.php?route=extension/news&token=b3d8e5ad6478d732ed87f6f342591e00
+VQMod::_parseMods - INVALID XML FILE: : Premature end of data in tag modification line 1 in /var/www/tlm/vqmod/xml/custom_urls.xml, line: 37
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 06:15:27 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/controller/common/seo_url.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 06:26:21 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/admin/index.php?route=extension/module&token=b3d8e5ad6478d732ed87f6f342591e00
+VQMod::_parseMods - INVALID XML FILE: : Premature end of data in tag modification line 1 in /var/www/tlm/vqmod/xml/custom_urls.xml, line: 37
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multi_vendor_dropshipper_v1556_20130909.xml
+   id        : Multi Vendor Drop Shipper 1.5.6 - Coded by waabay.com
+   version   : 1.5.6
+   vqmver    : 2.2.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/controller/common/home.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/controller/sale/coupon.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/language/english/english.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/language/english/sale/coupon.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/home.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/model/sale/coupon.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/sale/coupon_form.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/common/home.tpl] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 06:27:11 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/admin/index.php?route=extension/module&token=b3d8e5ad6478d732ed87f6f342591e00
+VQMod::_parseMods - INVALID XML FILE: : Premature end of data in tag modification line 1 in /var/www/tlm/vqmod/xml/custom_urls.xml, line: 37
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 06:28:18 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/controller/common/seo_url.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 06:31:38 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/admin/index.php?route=extension/module&token=b3d8e5ad6478d732ed87f6f342591e00
+VQMod::_parseMods - INVALID XML FILE: : Premature end of data in tag modification line 1 in /var/www/tlm/vqmod/xml/custom_urls.xml, line: 37
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 06:33:33 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/admin/index.php?route=extension/installer&token=b3d8e5ad6478d732ed87f6f342591e00
+VQMod::_parseMods - INVALID XML FILE: : Premature end of data in tag modification line 1 in /var/www/tlm/vqmod/xml/custom_urls.xml, line: 37
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 06:36:35 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/admin/index.php?route=extension/module&token=b3d8e5ad6478d732ed87f6f342591e00
+VQMod::_parseMods - INVALID XML FILE: : Premature end of data in tag modification line 1 in /var/www/tlm/vqmod/xml/custom_urls.xml, line: 37
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 08:18:22 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/?route=product%2Fsearch&search=
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/controller/common/seo_url.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 09:33:04 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/index.php?route=account/login
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/module/account.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div class="list-group">
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 10:54:48 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/controller/common/seo_url.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-17 11:00:54 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/index.php?route=account/login
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/module/account.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div class="list-group">
+
+----------------------------------------------------------------------
+
+

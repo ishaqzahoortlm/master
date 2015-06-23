@@ -1,0 +1,14 @@
+<modification>
+
+	<id>Product Filter Plus</id>
+	<version>1.0.0</version>
+	<vqmver>2.1.1</vqmver>
+	<author>ovife21</author>
+	
+	<file name="admin/model/catalog/product.php">
+		<operation>
+			<search position="replace"><![CDATA[LIKE '"]]></search>
+			<add><![CDATA[LIKE '%"]]></add>
+		</operation>				
+	</file>
+</modification>

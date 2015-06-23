@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<modification>
+	<id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+	<version>1.4.x and 1.5.x</version>
+	<vqmver required="true">2.4.0</vqmver>
+	<author>Opcrat</author>
+	
+	
+	
+	<file name="admin/language/*/common/menu.php">
+		<operation>
+			<search position="after"><![CDATA[$_['text_paypal_manage']]]></search>
+			<add><![CDATA[
+				$_['text_simple_blogs']	= 'Simple Blog';
+				$_['text_simple_blog_author']	= 'Author';
+				$_['text_simple_blog_category']	= 'Category';
+				$_['text_simple_blog_article']	= 'Article';
+				$_['text_simple_blog_article_comment']	= 'Article Comment';
+				$_['text_simple_blog_setting'] = 'Setting';
+				$_['text_simple_blog_general_setting'] = 'General Setting';
+				$_['text_simple_blog_category_setting'] = 'Category Setting';
+				$_['text_simple_blog_view_report'] = 'Report';
+			]]></add>
+		</operation>
+	</file>
+	
+	
+    
+    <!-- <file name="admin/controller/common/home.php">
+		<operation>
+			<search position="before"><![CDATA[$this->template = 'common/home.tpl';]]></search>
+			<add><![CDATA[
+				if (isset($this->session->data['success'])) {
+    				$data['success'] = $this->session->data['success'];
+    	
+    				unset($this->session->data['success']);
+    			} else {
+    				$data['success'] = '';
+    			}
+			]]></add>
+		</operation>
+	</file>
+    
+    <file name="admin/view/template/common/home.tpl">
+		<operation>
+			<search position="before"><![CDATA[<div class="box">]]></search>
+			<add><![CDATA[
+				<?php if ($success) { ?>
+  			       <div class="success"><?php echo $success; ?></div>
+  		        <?php } ?>
+			]]></add>
+		</operation>
+	</file> -->
+
+</modification>

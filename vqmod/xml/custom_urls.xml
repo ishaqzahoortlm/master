@@ -1,0 +1,37 @@
+<modification>
+<id>Seo All Alias</id>
+<version>1.0</version>
+<vqmver>2.1.7</vqmver>
+<author>noname</author>
+<file name="catalog/controller/common/seo_url.php"> 
+    <operation>
+        <search position="after" offset="2"><![CDATA[
+            $this->request->get['route'] = 'information/information';
+        ]]></search>
+        <add><![CDATA[
+        else {
+            $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE keyword = '" . $this->db->escape($this->request->get['_route_']) . "'");
+            if ($query->num_rows) {
+                $this->request->get['route'] = $query->row['query'];
+            }
+        }
+        ]]></add>
+    </operation>
+
+    <operation>
+        <search position="after" offset="1" index="2"><![CDATA[
+            unset($data[$key]);
+        ]]></search>
+        <add><![CDATA[
+                else {
+                    $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = '" . $this->db->escape($data['route']) . "'");
+
+                    if ($query->num_rows) {
+                        $url .= '/' . $query->row['keyword'];
+                        unset($data[$key]);
+                    }
+                }
+        ]]></add>
+    </operation>
+
+</file>

@@ -1,0 +1,74 @@
+<modification>
+	<id>News</id>
+	<version>OC 2.x</version>
+	<vqmver>2.0.0</vqmver>
+	<author>Equotix</author>
+	
+	<file name="catalog/controller/common/seo_url.php">
+		<operation>
+			<search position="before"><![CDATA[
+				if ($url[0] == 'information_id') {
+			]]></search>
+			<add><![CDATA[
+				if ($url[0] == 'news_id') {
+					$this->request->get['news_id'] = $url[1];
+				}	
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[
+				} elseif (isset($this->request->get['information_id'])) {
+			]]></search>
+			<add><![CDATA[
+				} elseif (isset($this->request->get['news_id'])) {
+					$this->request->get['route'] = 'information/news/news';
+			]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[
+				if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+			]]></search>
+			<add><![CDATA[
+				if (($data['route'] == 'information/news/news' && $key == 'news_id') || ($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+			]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[
+				if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+			]]></search>
+			<add><![CDATA[
+				if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id' && $url[0] != 'news_id') {
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/controller/common/dashboard.php" error="skip">
+		<operation>
+			<search position="after"><![CDATA[
+				function index()
+			]]></search>
+			<add><![CDATA[	
+				$this->load->model('setting/news');
+				$results = $this->model_setting_news->getNews();
+				$data['json'] = json_decode($results['text'], true);
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/view/template/common/dashboard.tpl" error="skip">
+		<operation>
+			<search position="before"><![CDATA[
+				<?php if ($error_install) { ?>
+			]]></search>
+			<add><![CDATA[
+				<?php if ($json) { ?>
+				<div class="alert alert-info">
+					<ul style="margin:0px; padding: 0px;">
+					<?php foreach ($json as $value) { ?>
+						<li style="margin: 0px 20px;"><?php echo $value['title']; ?></li>
+					<?php }	?>
+					</ul>
+				</div>
+				<?php } ?>
+			]]></add>
+		</operation>
+	</file>
+</modification>

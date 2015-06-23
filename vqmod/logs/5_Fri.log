@@ -1,0 +1,128 @@
+---------- Date: 2015-06-19 06:06:01 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/admin/index.php?route=common/dashboard&token=e57d5640c5677c3b3e7afa2030555f21
+VQMod::_parseMods - INVALID XML FILE: : Premature end of data in tag modification line 1 in /var/www/tlm/vqmod/xml/custom_urls.xml, line: 37
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/waabay_mvd_core_20141225_.xml
+   id        : Multi Vendor Drop Shipper 2.0.1.1 - Coded by waabay.com
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/profile.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/checkout.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-19 06:24:57 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/controller/common/seo_url.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-19 06:28:33 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-19 06:38:52 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-19 07:33:21 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/admin/index.php?route=catalog/information&token=e57d5640c5677c3b3e7afa2030555f21
+VQMod::_parseMods - INVALID XML FILE: : Premature end of data in tag modification line 1 in /var/www/tlm/vqmod/xml/custom_urls.xml, line: 37
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/waabay_mvd_core_20141225_.xml
+   id        : Multi Vendor Drop Shipper 2.0.1.1 - Coded by waabay.com
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/profile.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/checkout.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-19 07:37:41 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/admin/index.php?route=catalog/information&token=e57d5640c5677c3b3e7afa2030555f21
+VQMod::_parseMods - INVALID XML FILE: : Premature end of data in tag modification line 1 in /var/www/tlm/vqmod/xml/custom_urls.xml, line: 37
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/waabay_mvd_core_20141225_.xml
+   id        : Multi Vendor Drop Shipper 2.0.1.1 - Coded by waabay.com
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/profile.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/checkout.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-06-19 08:41:48 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /tlm/index.php?route=account/login
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/controller/common/seo_url.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+
+MOD DETAILS:
+   modFile   : /var/www/tlm/vqmod/xml/multimerch_core_sellermenu.xml
+   id        : MultiMerch Core Seller Menu
+   version   : 
+   vqmver    : 
+   author    : http://multimerch.com/
+
+File Name    : catalog/view/theme/default/template/module/account.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div class="list-group">
+
+File Name    : catalog/view/theme/default/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+
+----------------------------------------------------------------------
+
+

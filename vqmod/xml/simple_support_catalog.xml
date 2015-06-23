@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name></name>
+	<version>1.0</version>
+	<vqmver required="true">2.4.0</vqmver>
+	<author>Opcrat</author>
+	<link>http://opcrat.com</link>
+    
+    <file name="catalog/controller/module/account.php">
+		<operation>
+			<search position="after"><![CDATA[$data['text_recurring']]]></search>
+			<add><![CDATA[
+                if($this->config->get('simple_support_status')) {
+                    $data['text_simple_support'] = $this->language->get('text_simple_support');
+				    $data['text_simple_ticket'] = $this->language->get('text_simple_ticket');   
+                    $data['simple_support'] = $this->url->link('simple_support/home', '', 'SSL');
+				    $data['simple_ticket'] = $this->url->link('simple_support/ticket', '', 'SSL'); 
+                }
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/language/*/module/account.php">
+		<operation>
+			<search position="after"><![CDATA[$_['text_recurring']]]></search>
+			<add><![CDATA[
+				$_['text_simple_support']    = 'Support Faqs';
+				$_['text_simple_ticket']     = 'Support Ticket';
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/module/account.tpl">
+		<operation>
+			<search position="before"><![CDATA[<?php echo $account; ?>]]></search>
+			<add><![CDATA[
+				
+			]]></add>
+		</operation>
+		
+	</file>
+	
+	<!--<file name="catalog/view/theme/*/template/common/header.tpl">
+		<operation>
+			<search position="before"><![CDATA[<?php foreach ($scripts as $script) { ?>]]></search>
+			<add><![CDATA[
+				<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/highlight.css" />
+				<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/demo.css" />
+				<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/simple_support_custom.css" /> -->
+				<!-- jquery plugins -->
+				<!-- <script type="text/javascript" src="catalog/view/javascript/jquery/jquery.cookie.min.js"></script>
+				<script type="text/javascript" src="catalog/view/javascript/jquery/jquery.collapsible.min.js"></script>
+				<script type="text/javascript" src="catalog/view/javascript/jquery/highlight.pack.js"></script>
+			]]></add>
+		</operation>
+	</file> -->
+    
+    
+</modification>
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<!DOCTYPE modification [
+<!ENTITY adminFolder "admin">
+<!ENTITY themeFolder "default">
+]>
+<modification>
+<id>Custome Code</id>
+<version>1.0</version>
+<vqmver>2.1.7</vqmver>
+<author>developer</author>
+<file name="catalog/controller/module/featured.php"> 
+    <operation>
+        <search position="after" ><![CDATA[
+            $product_info = $this->model_catalog_product->getProduct($product_id);
+        ]]></search>
+        <add><![CDATA[
+            $seller_id = $this->MsLoader->MsProduct->getSellerId($product_id);
+	    $seller = $this->MsLoader->MsSeller->getSeller($seller_id);
+        ]]></add>
+    </operation>
+    
+     <operation>
+        <search position="after" ><![CDATA[
+            'manufacturers' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']),
+        ]]></search>
+        <add><![CDATA[
+            'seller_name' => $seller['name'],
+            'seller_company' => $seller['ms.company'],
+            'seller_href' => $this->url->link('seller/catalog-seller/profile', 'seller_id=' . $seller['seller_id']),
+        ]]></add>
+    </operation>
+</file>
+
+<file name="catalog/controller/product/category.php"> 
+    <operation>
+        <search position="after" ><![CDATA[
+            foreach ($results as $result) {
+        ]]></search>
+        <add><![CDATA[
+            $seller_id = $this->MsLoader->MsProduct->getSellerId($result['product_id']);
+	    $seller = $this->MsLoader->MsSeller->getSeller($seller_id);
+        ]]></add>
+    </operation>
+    
+    <operation>
+        <search position="after" ><![CDATA[
+            'manufacturers' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id']),
+        ]]></search>
+        <add><![CDATA[
+            'seller_name' => $seller['name'],
+            'seller_company' => $seller['ms.company'],
+            'seller_href' => $this->url->link('seller/catalog-seller/profile', 'seller_id=' . $seller['seller_id']),
+        ]]></add>
+    </operation>
+     
+</file>
+
+<file name="catalog/controller/product/manufacturer.php"> 
+    <operation>
+        <search position="after" ><![CDATA[
+            foreach ($results as $result) {
+        ]]></search>
+        <add><![CDATA[
+            $seller_id = $this->MsLoader->MsProduct->getSellerId($result['product_id']);
+	    $seller = $this->MsLoader->MsSeller->getSeller($seller_id);
+        ]]></add>
+    </operation>
+    
+    <operation>
+        <search position="after" ><![CDATA[
+            'manufacturers' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id']),
+        ]]></search>
+        <add><![CDATA[
+            'seller_name' => $seller['name'],
+            'seller_company' => $seller['ms.company'],
+            'seller_href' => $this->url->link('seller/catalog-seller/profile', 'seller_id=' . $seller['seller_id']),
+        ]]></add>
+    </operation>
+     
+</file>
+
+<file name="catalog/controller/product/search.php"> 
+    <operation>
+        <search position="after" ><![CDATA[
+            foreach ($results as $result) {
+        ]]></search>
+        <add><![CDATA[
+            $seller_id = $this->MsLoader->MsProduct->getSellerId($result['product_id']);
+	    $seller = $this->MsLoader->MsSeller->getSeller($seller_id);
+        ]]></add>
+    </operation>
+    
+    <operation>
+        <search position="after" ><![CDATA[
+            'manufacturers' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id']),
+        ]]></search>
+        <add><![CDATA[
+            'seller_name' => $seller['name'],
+            'seller_company' => $seller['ms.company'],
+            'seller_href' => $this->url->link('seller/catalog-seller/profile', 'seller_id=' . $seller['seller_id']),
+        ]]></add>
+    </operation>
+     
+</file>
+
+<file name="catalog/controller/product/products.php"> 
+    <operation>
+        <search position="after" ><![CDATA[
+            foreach ($results as $result) {
+        ]]></search>
+        <add><![CDATA[
+            $seller_id = $this->MsLoader->MsProduct->getSellerId($result['product_id']);
+	    $seller = $this->MsLoader->MsSeller->getSeller($seller_id);
+        ]]></add>
+    </operation>
+    
+    <operation>
+        <search position="after" ><![CDATA[
+            'manufacturers' => $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id']),
+        ]]></search>
+        <add><![CDATA[
+            'seller_name' => $seller['name'],
+            'seller_company' => $seller['ms.company'],
+            'seller_href' => $this->url->link('seller/catalog-seller/profile', 'seller_id=' . $seller['seller_id']),
+        ]]></add>
+    </operation>
+     
+</file>
+
+
+</modification>
